@@ -157,10 +157,10 @@
     // Once the upstream fix lands the line below along with this comment can be removed
     if ([gestureRecognizer.view isKindOfClass:[UIScrollView class]]) return;
 
-    UIView *parent = rootContentView.superview;
-    if ([parent isKindOfClass:[RCTRootView class]]) {
-        [(RCTRootView*)parent cancelTouches];
-    }
+    // UIView *parent = rootContentView.superview;
+    // if ([parent isKindOfClass:[RCTRootView class]]) {
+    //     [(RCTRootView*)parent cancelTouches];
+    // }
 }
 
 - (void)dealloc
